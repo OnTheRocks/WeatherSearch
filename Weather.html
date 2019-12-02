@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Search</h1>
+
+    <form id="weatherForm">
+      <label for="cityInput">Enter City</label>
+      <input type="text" id="cityInput"><br>
+
+      <input id="findCity" type="submit" value="Search">
+    </form>
+    
+    <div id="weatherView"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    $("#findCity").on("click", function(event) {
+
+      event.preventDefault();
+
+      var city = $("#cityInput").val();
+
+      var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=e71e90eede3cf2d964e119691ce61ab1"
+
+      console.log(queryURL);
+      // console.log(city);
+
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).then(function(response) {
+        $("#weatherView").text(JSON.stringify(response));        
+  
+        console.log(response.name);
+        console.log(response.main.temp);
+        console.log(response.coord);
+        console.log(response.main.humidity);
+        console.log(response.wind.speed);
+        console.log(response);
+      });  
+    });
+
+
+
+    
+
+  </script>
+  </div>
+</body>
+</html>
+
+
+<!-- UV query url: http://api.openweathermap.org/data/2.5/uvi?appid=86b720c513986e8928661e36e60bbfe9&lat=41.88&lon=-87.62 -->
