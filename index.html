@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Weather</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
 
 
@@ -34,14 +35,15 @@
           </div>
        </div>
 
-       <div id="srchResult" class="card hidden" style="width: 18rem;">
+       <div id="srchResult" class="card hiddden" style="width: 18rem;">
           <div class="card-header">
-            Featured
+            City
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li id="liTemp" class="list-group-item"></li>
+            <li id="liHumitity" class="list-group-item"></li>
+            <li id="liWindSpeed" class="list-group-item"></li>
+            <li id="liUVI" class="list-group-item"></li>
           </ul>
         </div>
 
