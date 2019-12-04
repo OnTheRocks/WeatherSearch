@@ -8,7 +8,7 @@ $("#findCity").on("click", function(event) {
 
   console.log(city);
 
-  var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=e71e90eede3cf2d964e119691ce61ab1"
+  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=e71e90eede3cf2d964e119691ce61ab1"
 
   console.log(queryURL);
   // console.log(city);
