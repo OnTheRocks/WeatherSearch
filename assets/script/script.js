@@ -33,7 +33,7 @@ $("#findCity").on("click", function(event) {
   }).then(function(uviResponse) {
     // $("#weatherView").text(JSON.stringify(uviResponse));
 
-
+    $("#srchResult").removeClass("hidden");
 
     $(".card-header").text(response.name + " Weather Details  --  " + weatherDate.format("MM/DD/YYYY"));    
     $("#liTemp").text("Temperature: " +  response.main.temp);
