@@ -3,6 +3,8 @@ console.log("Hi from Script!")
 $("#findCity").on("click", function(event) {
 
   event.preventDefault();
+
+  // clears existing data
   $("#liIcon").empty();
   $("#fiveDay").empty(); 
 
@@ -30,14 +32,14 @@ $("#findCity").on("click", function(event) {
 
         // Get weather icon.
   var icon = response.weather[0].icon
-  var iconUrl = "http://openweathermap.org/img/wn/" + icon + ".png"
+  var iconUrl = "https://openweathermap.org/img/wn/" + icon + ".png"
 
         // Get lat and lon for UVI.
   var lat = response.coord.lat
   var lon = response.coord.lat   
   
         // create URL for UVI.
-  var uvQueryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=e71e90eede3cf2d964e119691ce61ab1&lat=" + lat + "&lon=" + lon
+  var uvQueryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=e71e90eede3cf2d964e119691ce61ab1&lat=" + lat + "&lon=" + lon
 
   // Gets UVIndex....
   $.ajax({
@@ -52,7 +54,7 @@ $("#findCity").on("click", function(event) {
   }).then(function(fiveDayResponse) { 
 
     var icon5day = fiveDayResponse.list[0].weather[0].icon
-    var iconUrl5day = "http://openweathermap.org/img/wn/" + icon5day + ".png"
+    var iconUrl5day = "https://openweathermap.org/img/wn/" + icon5day + ".png"
     // $("#weatherView").text(JSON.stringify(fiveDayResponse));
 
 
