@@ -10,6 +10,28 @@ body {
 
 }
 
+.srchResult {
+  width: 20rem;
+}
+
+.card {
+  margin-top: 25px;
+
+}
+
+.fiveDay {
+
+  margin-top: 25px;
+  border: thin solid slateblue;
+}
+
+.days {
+  /* display: inline; */
+  /* float: left; */
+  background-color: lightseagreen;
+  border: thin solid green;
+}
+
 .hidden {
   display: none;
 }
