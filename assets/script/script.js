@@ -39,7 +39,7 @@ $("#findCity").on("click", function(event) {
   var lon = response.coord.lat   
   
         // create URL for UVI.
-  var uvQueryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=e71e90eede3cf2d964e119691ce61ab1&lat=" + lat + "&lon=" + lon
+  var uvQueryURL = "https://api.openweathermap.org/data/2.5/uvi?APPID=e71e90eede3cf2d964e119691ce61ab1&lat=" + lat + "&lon=" + lon
 
   // Gets UVIndex....
   $.ajax({
