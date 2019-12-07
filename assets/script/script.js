@@ -127,3 +127,4 @@ $("#findCity").on("click", function(event) {
     // console.log(uviResponse);
     // console.log(fiveDayResponse);
 
+ 
