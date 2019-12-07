@@ -11,25 +11,29 @@ body {
 }
 
 .srchResult {
-  width: 20rem;
+  margin-right: 5px;
+
 }
 
 .card {
+  width: 18rem;
   margin-top: 25px;
+  
 
 }
 
 .fiveDay {
-
+  float: left;
   margin-top: 25px;
-  border: thin solid slateblue;
 }
 
 .days {
-  /* display: inline; */
-  /* float: left; */
-  background-color: lightseagreen;
-  border: thin solid green;
+  float: left;
+  margin-left: 5px;
+}
+
+.list_group_item {
+  border: none;
 }
 
 .hidden {

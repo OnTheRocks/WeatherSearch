@@ -70,10 +70,12 @@ $("#findCity").on("click", function(event) {
     $("#liWindSpeed").text("Wind Speed: " + response.wind.speed + " mph");
     $("#liUVI").text("UV Index: " + uviResponse.value);
 
+
+
     // 5-day forecast.
     for (i=1; i<40; i+=8) {
       var day = $("<div></div>");
-      day.addClass(" card mb-2 bg-primary text-white days").attr({"style":"width: 8rem"});  
+      day.addClass("card mb-2 bg-primary text-white days").attr({"style":"width: 10rem"});  
       var cardBody = $("<div></div");
       cardBody.addClass("card-body");
       var cardDate = moment(fiveDayResponse.list[i].dt_txt);
@@ -95,28 +97,33 @@ $("#findCity").on("click", function(event) {
       $("#fiveDay").append(day);
 
     };
+  });  
+  }); 
+});
+});
+
+
+
+    // Save/pull to/from loacl Storage...
+
+    // Geoloactoin feature...
  
 
 
     // debugging
 
-    console.log("The weather icon is: " + icon);
-    console.log("The weather icon URL is: " + iconUrl);
-    console.log(uvQueryURL);
-    console.log("Date: " +  weatherDate.format("MM/DD/YYYY"));
-    console.log(response.dt);
-    console.log(response.name);
-    console.log(response.main.temp);
-    console.log(response.coord.lat);
-    console.log(response.coord.lon);
-    console.log(response.main.humidity);
-    console.log(response.wind.speed);
+    // console.log("The weather icon is: " + icon);
+    // console.log("The weather icon URL is: " + iconUrl);
+    // console.log(uvQueryURL);
+    // console.log("Date: " +  weatherDate.format("MM/DD/YYYY"));
+    // console.log(response.dt);
+    // console.log(response.name);
+    // console.log(response.main.temp);
+    // console.log(response.coord.lat);
+    // console.log(response.coord.lon);
+    // console.log(response.main.humidity);
+    // console.log(response.wind.speed);
+    // console.log(response);
+    // console.log(uviResponse);
+    // console.log(fiveDayResponse);
 
-    console.log(response);
-    console.log(uviResponse);
-    console.log(fiveDayResponse);
-
-  });  
-  }); 
-});
-});

@@ -19,6 +19,7 @@
 </head>
 <body>
   <div class="container">
+
     <div class="jumbotron ">
       <h1 class="display-4">Weather Search</h1>
       <p class="lead">Search below for current weather information as well as a 5-day forecast for the city of your choice.</p>
@@ -28,9 +29,10 @@
           <div class="input-group-append">
             <button class="btn btn btn-success" type="button" id="findCity">Search</button>
           </div>
+          <div id="cityList" class="w-100 btn-group-horizontal "></div>
        </div>
 
-       <div id="srchResult" class="card hidden" style="width: 18rem;">
+       <div id="srchResult" class="card hidden">
           <div class="card-header">
             City
           </div>
@@ -43,21 +45,17 @@
             <li id="liWindSpeed" class="list-group-item"></li>
             <li id="liUVI" class="list-group-item"></li>
           </ul>
+         
         </div>
 
-        <div ID="fiveDay">
-          <!-- <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div> -->
-        </div>
+         <div ID="fiveDay" class="d-flex  flex-md-row justify-content-between"></div>
+
+        
 
     </div>
   </div>
 
-      
+  <!-- style="width: 18rem;" -->
     <div id="weatherView"></div>
       
     </div>
