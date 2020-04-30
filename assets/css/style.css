@@ -1,13 +1,22 @@
 body {
-  background-image: url("../images/cubes.png")
+  background-image: url("../images/storm.jpg");
+  /* min-width: 100%; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: auto;
 }
 
 .jumbotron {
-  margin-top: 100px;
+  margin-top: 150px;
   border: #00c851 thick solid;
   border-radius: 5px;
   box-shadow: 0 0 10px 2px #007e33;
 
+}
+
+.input-group {
+  width: 50% !important;
 }
 
 .srchResult {
