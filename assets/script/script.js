@@ -15,8 +15,6 @@ $("#findCity").on("click", function(event) {
   var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=e71e90eede3cf2d964e119691ce61ab1"
   var fiveDayQueryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&APPID=e71e90eede3cf2d964e119691ce61ab1"
   
-
-
   console.log(queryURL);
   console.log(fiveDayQueryURL);
   // console.log(city);
@@ -57,8 +55,6 @@ $("#findCity").on("click", function(event) {
     var iconUrl5day = "https://openweathermap.org/img/wn/" + icon5day + ".png"
     // $("#weatherView").text(JSON.stringify(fiveDayResponse));
 
-
-
   //  filling single day details.
     $("#srchResult").removeClass("hidden");
     $(".card-header").text(response.name + "  --  " + weatherDate.format("MM/DD/YYYY"));
@@ -69,8 +65,6 @@ $("#findCity").on("click", function(event) {
     $("#liHumitity").text("Humidity: " + response.main.humidity + "%");
     $("#liWindSpeed").text("Wind Speed: " + response.wind.speed + " mph");
     $("#liUVI").text("UV Index: " + uviResponse.value);
-
-
 
     // 5-day forecast.
     for (i=1; i<40; i+=8) {
@@ -101,30 +95,3 @@ $("#findCity").on("click", function(event) {
   }); 
 });
 });
-
-
-
-    // Save/pull to/from loacl Storage...
-
-    // Geoloactoin feature...
- 
-
-
-    // debugging
-
-    // console.log("The weather icon is: " + icon);
-    // console.log("The weather icon URL is: " + iconUrl);
-    // console.log(uvQueryURL);
-    // console.log("Date: " +  weatherDate.format("MM/DD/YYYY"));
-    // console.log(response.dt);
-    // console.log(response.name);
-    // console.log(response.main.temp);
-    // console.log(response.coord.lat);
-    // console.log(response.coord.lon);
-    // console.log(response.main.humidity);
-    // console.log(response.wind.speed);
-    // console.log(response);
-    // console.log(uviResponse);
-    // console.log(fiveDayResponse);
-
- 
