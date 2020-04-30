@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/storm.jpg");
+  background-image: url("../images/stormB.jpg");
   /* min-width: 100%; */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,11 +8,11 @@ body {
 }
 
 .jumbotron {
-  margin-top: 150px;
-  border: #00c851 thick solid;
+  margin-top: 100px;
+  border: #00c851 thin  solid;
   border-radius: 5px;
-  box-shadow: 0 0 10px 2px #007e33;
-
+  box-shadow: 0 0 200px 2px #00c851;
+  background-color: rgba(255, 255, 255, .3);
 }
 
 .input-group {
