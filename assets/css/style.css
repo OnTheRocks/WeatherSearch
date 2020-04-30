@@ -7,6 +7,7 @@ body {
   background-size: auto;
 }
 
+
 .jumbotron {
   margin-top: 100px;
   border: #00c851 thin  solid;
@@ -31,9 +32,12 @@ body {
 
 }
 
-.fiveDay {
-  float: left;
-  margin-top: 25px;
+#fiveDay {
+  display: inline-box;
+  float: right;
+  height: 300px;
+  margin-top: 0;
+
 }
 
 .days {

@@ -75,7 +75,7 @@ $("#findCity").on("click", function(event) {
     // 5-day forecast.
     for (i=1; i<40; i+=8) {
       var day = $("<div></div>");
-      day.addClass("card mb-2 bg-primary text-white days").attr({"style":"width: 10rem"});  
+      day.addClass("card mb-2 bg-primary text-white days").attr({"style":"width: 8rem"});  
       var cardBody = $("<div></div");
       cardBody.addClass("card-body");
       var cardDate = moment(fiveDayResponse.list[i].dt_txt);
