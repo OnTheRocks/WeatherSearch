@@ -1,6 +1,9 @@
 # WeatherSearch
 This is an app that searches for the current weather as well as a 5 day forecast using the OpenWeatherMap API.
 
+Photo by Andrew Neel from Pexels 
+Photo by Ralph W. lambrecht from Pexels
+
 ## About
 
 - The user will enter a city and click the search button.  The app will return current 
